@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from keras.models import Model 
 from keras.layers import Input, Dense
 from keras import regularizers
-# from tempfile import TemporaryFile
+
 def load_data():
 	(x_train,y_train),(x_test,y_test) = mnist.load_data()
 	x_train = x_train.astype('float32')/255.0
